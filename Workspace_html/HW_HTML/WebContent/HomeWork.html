@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome to Steam</title>
+	<link rel="shortcut icon" type="image/x-icon" href="resources/img/1024px-Steam_icon_logo.svg.png">
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		.main {
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			position: fixed;
+			background: url("resources/img/colored_body_top2.png") center top no-repeat;
+			background-color: #1b2838;
+		}
+
+		header {
+
+
+			background: rgb(31, 31, 36);
+		}
+
+		header>#box {
+			width: 940px;
+			height: 100px;
+			z-index: 500;
+			margin: auto;
+			position: relative;
+			padding-left: 15px;
+			padding-right: 15px;
+			clear : both;
+		}
+
+		.logo {
+			width: 200px;
+			height: 100px;
+			float: left;
+			padding-top: 11px;
+		}
+
+		.logo>a>img {
+			width: 170px;
+			height: 70px;
+		}
+
+		.topNav {
+			width: 300px;
+			height: 70px;
+			padding-top: 120;
+			position: absolute;
+			left: 200px;
+		}
+
+		.topText {
+			display: block;
+			color: rgb(172, 172, 172);
+			text-decoration: none;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 11pt;
+			padding-top: 50px;
+			padding-right: 9px;
+			float: left;
+		}
+
+		.topButton>img {
+			position: absolute;
+			left: 10px;
+			top: 5px;
+		}
+
+		.topButton {
+			height: 20px;
+			padding-left: 35px;
+			padding-right: 10px;
+			padding-bottom: 4px;
+			padding-top: 3px;
+			background-color: rgb(98, 138, 25);
+			color: rgb(235, 240, 235);
+			font-family: sans-serif;
+			font-size: 8pt;
+			margin-right: 3px;
+			text-decoration: none;
+		}
+
+		.topEvent {
+			width: 250px;
+			position: absolute;
+			right: 0;
+			top: 5px;
+			color: rgb(136, 136, 136);
+		}
+
+		.topEvent>.next {
+			color: rgb(136, 136, 136);
+			text-decoration: none;
+			font-size: 9pt;
+			font-family: sans-serif;
+		}
+
+		.sLanguage {
+			position: absolute;
+			top: 8px;
+		}
+		.nav {
+			width: 940px;
+			height: 70px;
+			margin: auto;
+			padding-left: 15px;
+			padding-right: 15px;
+			position: relative;
+		}
+		.navbox {
+			position: absolute;
+			bottom: 0;
+			width: 940px;
+			background:  rgb(72, 132, 180);
+		}
+		.nb > div {
+			border: 1px solid;
+			width: 100px;
+			height: 100%;
+			box-sizing: border-box;
+			left: 0;
+			padding: 1pt;
+			float: left;
+			background: rgb(72, 132, 180);
+			font-size: 10pt;
+			
+		}
+		input {
+			background-image: url("resources/img/search_icon_btn.png");
+			background-position: right;
+			background-repeat: no-repeat;
+			background-color: rgb(34, 83, 122);
+			color: black;
+			float: right;
+			height: 35px;
+		}
+
+	</style>
+</head>
+
+<body class="backColor">
+	<div class="main">
+		<header>
+			<div id="box">
+				<div class="logo">
+					<a href="#">
+						<img src="resources/img/logo_steam.svg" alt="steam">
+					</a>
+				</div>
+				<div class="topNav">
+					<a class="topText" href="">STORE</a>
+					<a class="topText" href="">COMMUNITY</a>
+					<a class="topText" href="">ABOUT</a>
+					<a class="topText" href="">SUPPORT</a>
+				</div>
+				<div class="topEvent">
+					<a href="" class="topButton"><img src="resources/img/btn_header_installsteam_download.png"> Install
+						Steam</a>
+					<a href="" class="next">login</a>
+					&nbsp;|&nbsp;
+					<a href="" class="next">language <img src="resources/img/btn_arrow_down_padded.png" alt=""
+							class="sLanguage"> </a>
+				</div>
+			</div>
+		</header>
+		<nav class="nav">
+			<div class="navbox">
+				<div class="nb">
+					<div><a>Your Store</a><img src="resources/img/btn_arrow_down_padded.png" alt=""></div>
+					<div><a>Browse</a><img src="resources/img/btn_arrow_down_padded.png" alt=""></div>
+					<div><a>Points Shop</a></div>
+					<div><a>News</a></div>
+					<div><a>Steam Labs</a></div>
+					<input type="text" placeholder="search the store">
+				</div>
+			</div>
+		</nav>
+		<div>
+			<section>
+				<article>
+
+				</article>
+			</section>
+		</div>
+		<footer>
+
+		</footer>
+	</div>
+</body>
+
+</html>
