@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="html" lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -9,6 +9,7 @@
 		* {
 			margin: 0px;
 			padding: 0px;
+			box-sizing: border-box;
 		}
 		.main {
 			top: 0;
@@ -19,36 +20,29 @@
 			background: url("resources/img/colored_body_top2.png") center top no-repeat;
 			background-color: #1b2838;
 		}
-
 		header {
-
-
 			background: rgb(31, 31, 36);
 		}
-
 		header>#box {
 			width: 940px;
 			height: 100px;
 			z-index: 500;
 			margin: auto;
 			position: relative;
-			padding-left: 15px;
-			padding-right: 15px;
-			clear : both;
+			padding-left: 10px;
+			padding-right: 10px;
+			clear: both;
 		}
-
 		.logo {
 			width: 200px;
 			height: 100px;
 			float: left;
 			padding-top: 11px;
 		}
-
 		.logo>a>img {
 			width: 170px;
 			height: 70px;
 		}
-
 		.topNav {
 			width: 300px;
 			height: 70px;
@@ -56,7 +50,6 @@
 			position: absolute;
 			left: 200px;
 		}
-
 		.topText {
 			display: block;
 			color: rgb(172, 172, 172);
@@ -67,13 +60,14 @@
 			padding-right: 9px;
 			float: left;
 		}
-
+		.topText:hover {
+			color: white;
+		}
 		.topButton>img {
 			position: absolute;
 			left: 10px;
 			top: 5px;
 		}
-
 		.topButton {
 			height: 20px;
 			padding-left: 35px;
@@ -87,7 +81,6 @@
 			margin-right: 3px;
 			text-decoration: none;
 		}
-
 		.topEvent {
 			width: 250px;
 			position: absolute;
@@ -95,14 +88,12 @@
 			top: 5px;
 			color: rgb(136, 136, 136);
 		}
-
 		.topEvent>.next {
 			color: rgb(136, 136, 136);
 			text-decoration: none;
 			font-size: 9pt;
 			font-family: sans-serif;
 		}
-
 		.sLanguage {
 			position: absolute;
 			top: 8px;
@@ -111,38 +102,171 @@
 			width: 940px;
 			height: 70px;
 			margin: auto;
-			padding-left: 15px;
-			padding-right: 15px;
+			margin-bottom: 15px;
+			padding-left: 10px;
+			padding-right: 10px;
 			position: relative;
 		}
 		.navbox {
 			position: absolute;
 			bottom: 0;
+			height: 35px;
 			width: 940px;
-			background:  rgb(72, 132, 180);
+			background: rgb(72, 132, 180);
+			/* line-height: 35px; */
+			align-items: center;
 		}
-		.nb > div {
-			border: 1px solid;
-			width: 100px;
+		.nb {
 			height: 100%;
-			box-sizing: border-box;
+		}
+		.nb>.aaa {
+			border: 1px solid rgba(16, 21, 25, 0.3);
+			height: 100%;
 			left: 0;
 			padding: 1pt;
 			float: left;
 			background: rgb(72, 132, 180);
 			font-size: 10pt;
-			
+			cursor: pointer;
+			text-align: center;
+			padding: 5px 13px;
 		}
-		input {
-			background-image: url("resources/img/search_icon_btn.png");
-			background-position: right;
-			background-repeat: no-repeat;
-			background-color: rgb(34, 83, 122);
+		.nb .aaa:hover {
+			background: white;
+		}
+		.nb .aaa a {
+			color: rgb(194, 193, 193);
+			text-decoration: none;
+		}
+		.nb .aaa a:hover {
 			color: black;
+		}
+		.inputbox {
+			width: 200px;
+			padding: 3px;
+			margin: 2px;
+			position: absolute;
+			right: 0;
+			height: 32px;
+			border-radius: 2px;
+			background-color: rgb(55, 101, 138);
+			border: 1px solid rgba(16, 21, 25, 0.3);
+			cursor: text;
+		}
+		.inputbox input {
+			position: absolute;
+			width: 160px;
+			height: 80%;
+			padding: 5px;
+			display: inline-block;
+			color: white;
+			background: rgb(55, 101, 138);
+			outline: none;
+			border: none;
+		}
+		.inputbox input::placeholder {
+			color: rgb(63, 63, 63);
+			font-style: italic;
+			font-size: 12pt;
+		}
+		.inputbox a img:hover {
+			background-image: url("resources/img/search_icon_btn_over.png");
+		}
+		.inputbox a {
+			position: absolute;
+			right: 3px;
+		}
+		#center {
+			overflow: hidden;
+			position: relative;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+		}
+		.center_one {
+			position: relative;
+			height: 470px;
+			padding-top: 20px;
+			padding-bottom: 30px;
+		}
+		.one_box {
+			width: 940px;
+			height: 100%;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin: auto;
+		}
+		.one_box h4 {
+			height: 30px;
+			color: rgb(219, 219, 219);
+			letter-spacing: 2px;
+			font-size: 14px;
+		}
+		.main_picture_one {
+			height: 100%;
+		}
+		.picture_one {
+			height: 380px;
+		}
+		.next_picture_one {
+			height: 40px;
+		}
+		.center_two {
+			position: relative;
+			height: 480px;
+		}
+		.main_picture_two {
+			height: 450px;
+		}
+		.two_box {
+			width: 940px;
+			height: 100%;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin: auto;
+		}
+		.picture_two {
+			height: 410px;
+		}
+		.two_box h4 {
+			height: 30px;
+			color: rgb(219, 219, 219);
+			letter-spacing: 2px;
+			font-size: 14px;
+		}
+		.two_box h4 .more {
+			border: 1px solid rgb(150, 150, 150);
+			color: rgb(238, 238, 238);
+			padding: 1px 13px;
+			border-radius: 3px;
 			float: right;
-			height: 35px;
+		}
+		.two_box h4 .more:hover {
+			border: 1px solid rgb(238, 238, 238);
 		}
 
+		.two_box h4 span a {
+			text-decoration: none;
+			letter-spacing: 0px;
+			font-size: 10pt;
+		}
+		.next_picture_two {
+			height: 40px;
+		}
+		.two_table_one, .two_table_two, .two_table_three {
+			width: 300px;
+			height: 100%;
+			box-shadow: 0 0 5px black;
+			float: left;
+		}
+		.two_table_one, .two_table_two {
+			margin-right: 10px;
+		}
+		.picture_two img {
+			width: 300px;
+			position: relative;
+		}
 	</style>
 </head>
 
@@ -174,21 +298,117 @@
 		<nav class="nav">
 			<div class="navbox">
 				<div class="nb">
-					<div><a>Your Store</a><img src="resources/img/btn_arrow_down_padded.png" alt=""></div>
-					<div><a>Browse</a><img src="resources/img/btn_arrow_down_padded.png" alt=""></div>
-					<div><a>Points Shop</a></div>
-					<div><a>News</a></div>
-					<div><a>Steam Labs</a></div>
-					<input type="text" placeholder="search the store">
+					<div class="aaa"><a href="#">Your Store</a><img src="resources/img/btn_arrow_down_padded.png"
+							alt=""></div>
+					<div class="aaa"><a href="#">Browse</a><img src="resources/img/btn_arrow_down_padded.png" alt="">
+					</div>
+					<div class="aaa"><a href="#">Points Shop</a></div>
+					<div class="aaa"><a href="#">News</a></div>
+					<div class="aaa"><a href="#">Steam Labs</a></div>
+					<div class="inputbox">
+						<input type="text" placeholder="search the store" size="22">
+						<a href="#">
+							<img src="resources/img/search_icon_btn.png" alt="">
+						</a>
+					</div>
 				</div>
 			</div>
 		</nav>
-		<div>
-			<section>
-				<article>
+		<div id="center">
+			<section class="center_one">
+				<article class="one_box">
+					<h4>FEATURED & RECOMMENDED</h3>
+						<div class="main_picture_one">
+							<div class="picture_one">
+								<a href="">
+									<div>
+
+									</div>
+									<div>
+
+									</div>
+								</a>
+							</div>
+							<div class="next_picture_one">
+
+							</div>
+							<div class="arrow_left">
+
+							</div>
+							<div class="arrow_right">
+
+							</div>
+						</div>
+				</article>
+			</section>
+			<section class="center_two">
+				<article class="two_box">
+					<h4>SPECLAL OFFERS
+						<span>
+							<a href="#"><span class="more">BROWSE MORE</span></a>
+						</span>
+					</h4>
+					<div class="main_picture_two">
+						<div class="picture_two">
+							<div class="two_table_one">
+								<div>
+									<a href="">
+										<img src="resources/img/spotlight_image_english.jpg" alt=""></a>
+								</div>
+								<div>
+									<h4></h4>
+									<div></div>
+									<div>
+										<div></div>
+									</div>
+								</div>
+							</div>
+							<div class="two_table_two">
+								<div>
+									<a href="">
+										<img src="" alt=""></a>
+								</div>
+								<div>
+									<h4></h4>
+									<div></div>
+									<div>
+										<div></div>
+									</div>
+								</div>
+							</div>
+							<div class="two_table_three">
+								<div>
+									<a href="">
+										<img src="" alt=""></a>
+								</div>
+								<div>
+									<h4></h4>
+									<div></div>
+									<div>
+										<div></div>
+									</div>
+								</div>
+							</div>
+							<div></div>
+							<div>
+								<a href=""></a>
+								<a href=""></a>
+							</div>
+						</div>
+						<div class="next_picture_two">
+
+						</div>
+						<div class="arrow_left">
+
+						</div>
+						<div class="arrow_right">
+
+						</div>
+					</div>
 
 				</article>
 			</section>
+
 		</div>
 		<footer>
 
