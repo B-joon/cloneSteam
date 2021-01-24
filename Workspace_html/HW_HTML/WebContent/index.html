@@ -16,9 +16,10 @@
 			right: 0;
 			left: 0;
 			bottom: 0;
-			position: fixed;
+			position: relative;
 			background: url("resources/img/colored_body_top2.png") center top no-repeat;
 			background-color: #1b2838;
+
 		}
 		header {
 			background: rgb(31, 31, 36);
@@ -81,6 +82,9 @@
 			margin-right: 3px;
 			text-decoration: none;
 		}
+		.topButton:hover {
+			color: white;
+		}
 		.topEvent {
 			width: 250px;
 			position: absolute;
@@ -93,6 +97,9 @@
 			text-decoration: none;
 			font-size: 9pt;
 			font-family: sans-serif;
+		}
+		.next:hover {
+			color: white;
 		}
 		.sLanguage {
 			position: absolute;
@@ -267,6 +274,12 @@
 			width: 300px;
 			position: relative;
 		}
+		.two_title_one {
+			height: 100px;
+			position: absolute;
+			background-image: url("resources/img/background_spotlight.jpg") bottom center no-repeat;
+		}
+		
 	</style>
 </head>
 
@@ -351,12 +364,13 @@
 					<div class="main_picture_two">
 						<div class="picture_two">
 							<div class="two_table_one">
-								<div>
+								<div class="two_img_one">
 									<a href="">
-										<img src="resources/img/spotlight_image_english.jpg" alt=""></a>
+										<img src="resources/img/spotlight_image_english.jpg" alt="">
+									</a>
 								</div>
-								<div>
-									<h4></h4>
+								<div class="two_title_one">
+									<h4>WEEKEND DEAL</h4>
 									<div></div>
 									<div>
 										<div></div>
@@ -366,7 +380,7 @@
 							<div class="two_table_two">
 								<div>
 									<a href="">
-										<img src="" alt=""></a>
+										<img src="resources/img/spotlight_image_english2.jpg" alt=""></a>
 								</div>
 								<div>
 									<h4></h4>
