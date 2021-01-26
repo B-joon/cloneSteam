@@ -116,7 +116,7 @@
 			position: absolute;
 			bottom: 0;
 			height: 35px;
-			width: 940px;
+			width: 920px;
 			background: rgb(72, 132, 180);
 			/* line-height: 35px; */
 			align-items: center;
@@ -219,28 +219,106 @@
 		}
 		.one_link {
 			width: 100%;
-			height: 380px;
+			height: 340px;
 			background-image: url("resources/img/background_maincap_2.jpg");
 			background-position: right;
 			background-repeat: no-repeat;
+			display: flex;
+			text-decoration: none;
+
 		}
 		.picture_left_box {
 			width: 600px;
 			height: 100%;
 			background-image: url("resources/img/capsule_616x353\ \(1\).jpg");
-
+			z-index: 100;
 			background-size: cover;
 			background-position: center center;
 			margin-right: 10px;
 			position: relative;
 		}
+		.i_dont_no {
+			width: 100%;
+			height: 60px;
+			padding-top: 11px;
+			padding-left: 10px;
+		}
+		.Available {
+			font-size: 15pt;
+			color: white;
+		}
+		.seller {
+			margin-top: 5px;
+			width: 55px;
+			height: 15px;
+			padding-left: 5px;
+			font-size: 6pt;
+			background-color: rgb(77, 77, 77);
+			color: white;
+			border-radius: 2px;
+		}
+		.pay_one {
+			width: 70px;
+			font-size: 10pt;
+			color: rgb(164, 202, 233);
+			padding-left: 10px;
+			margin-right: 210px;
+		}
+		.win_picture_one {
+			width: 20px;
+			height: 20px;
+			background-repeat: no-repeat;
+			opacity: 0.7;
+			background-image: url("resources/img/icon_platform_win.png");
+		}
+		.pay_one, .win_picture_one {
+			float: left;
+			bottom: 10px;
+			margin-top: 20px;
+		}
 		.picture_right_box {
 			width: 309px;
 			height: 100%;
 		}
-		.picture_left_box, .picture_right_box {
+		.picture_left_box, .one_link {
 			float: left;
 			box-shadow: 0 0 10px black;
+		}
+		.picture_right_head {
+			width: 100%;
+			height: 70px;
+			padding: 5px;
+			align-items: center;
+			font-size: 25px;
+			color: white;
+		}
+		.four_picture {
+			width: 340px;
+			height: 160px;
+			position: relative;
+			right: 30px;
+		}
+		.PUBG_one, .PUBG_two, .PUBG_three, .PUBG_four {
+			width: 160px;
+			height: 70px;
+			margin-top: 8px;
+			margin-right: 7px;
+			background-size: cover;
+			background-position: center center;
+			display: inline-block;
+			opacity: 0.5;
+		}
+		.PUBG_one {
+			background-image: url("resources/img/ss_c49417566f70eec8bf0ddbb2956b235d91504a09.600x338.jpg");
+		}
+		.PUBG_two {
+			background-image: url("resources/img/ss_11e51d12d854712ed7c83e69f1b21d246ab018b3.600x338.jpg");
+		}
+		.PUBG_three {
+			background-image: url("resources/img/ss_de28db240ee8646b1dd883a141b4832271a150e7.600x338.jpg");
+		}
+		.PUBG_four {
+			background-image: url("resources/img/ss_abadb3bfc951cd05150901ff65386e3129c6011a.600x338.jpg");
 		}
 		.center_two {
 			position: relative;
@@ -301,6 +379,7 @@
 			position: absolute;
 			background-image: url("resources/img/background_spotlight.jpg") bottom center no-repeat;
 		}
+
 	</style>
 </head>
 <body class="backColor">
@@ -358,7 +437,30 @@
 
 									</div>
 									<div class="picture_right_box">
+										<div class="picture_right_head">
+											PLAYERUNKNOWN'S
+											BATTLEGROUNDS
+										</div>
+										<div class="four_picture">
+											<div class="PUBG_one"></div>
+											<div class="PUBG_two"></div>
+											<div class="PUBG_three"></div>
+											<div class="PUBG_four"></div>
+										</div>
+										<div class="i_dont_no">
+											<div class="Available">
+												Now Available
+											</div>
+											<div class="seller">
+												Top Seller
+											</div>
+										</div>
+										<div class="pay_one">
+											₩ 32,000
+										</div>
+										<div class="win_picture_one">
 
+										</div>
 									</div>
 								</a>
 							</div>
